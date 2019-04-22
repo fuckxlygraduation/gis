@@ -27,7 +27,7 @@ function char1() {
                 color : '#ffffff',
 
             },
-            data:['民用','军用','行政','未知']
+            data:['船只','浮标','观测站','未识别']
         },
 
         calculable : false,
@@ -57,10 +57,10 @@ function char1() {
                     }
                 },
                 data:[
-                    {value:335, name:'民用'},
-                    {value:310, name:'军用'},
-                    {value:234, name:'行政'},
-                    {value:135, name:'未知'}
+                    {value:10, name:'船只'},
+                    {value:9, name:'浮标'},
+                    {value:9, name:'观测站'},
+                    {value:3, name:'未识别'}
 
                 ]
             }
@@ -84,7 +84,7 @@ function char2() {
         },
         grid: {show:'true',borderWidth:'0'},
         legend: {
-            data:['航行', '在港','抛锚','离线'],
+            data:['运行', '待机','故障','离线'],
             textStyle : {
                 color : '#ffffff',
 
@@ -114,7 +114,7 @@ function char2() {
         yAxis : [
             {
                 type : 'category',
-                data : ['民用','军用','行政','未知'],
+                data : ['船只','浮标','观测站','未识别'],
                 axisLabel: {
                     show: true,
                     textStyle: {
@@ -131,32 +131,32 @@ function char2() {
         ],
         series : [
             {
-                name:'航行',
+                name:'运行',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[320, 302, 301, 334]
+                data:[10, 9, 9, 1]
             },
             {
-                name:'在港',
+                name:'待机',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[120, 132, 101, 134]
+                data:[3, 5, 5, 1]
             },
             {
-                name:'抛锚',
+                name:'故障',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[220, 182, 191, 234]
+                data:[1, 1, 1, 1]
             },
             {
                 name:'离线',
                 type:'bar',
                 stack: '总量',
                 itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-                data:[150, 212, 201, 154]
+                data:[1, 1, 1, 0]
             }
 
         ]

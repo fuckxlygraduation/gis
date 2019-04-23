@@ -9,26 +9,26 @@ var setting = {
 
 };
 var zNodes =[
-    {"id":0,"name":"提请批准逮捕","open":true,icon:"img/down1.png",children:[
-        { "id":1,"pid":0, "name":"提请批准逮捕","open":true, icon:"img/page.png",
+    {"id":0,"name":"在线目标","open":true,icon:"img/down1.png",children:[
+        { "id":1,"pid":0, "name":"船只","open":true, icon:"img/page.png",
             children: [
-                { "id":11,"pid":1, "name":"接警处"},
-                { "id":12, "pid":1,"name":"接受案事件"},
-                { "id":13,"pid":1, "name":"立案审查"}
+                { "id":11,"pid":1, "name":"军用"},
+                { "id":12, "pid":1,"name":"民用"},
+                { "id":13,"pid":1, "name":"行政"}
             ]
         },
-        {"id":2,"pid":0,"name":"公安立案",icon:"img/page.png",
+        {"id":2,"pid":0,"name":"浮标",icon:"img/page.png",
             children: [
-                { "id":21,"pid":2, "name":"法院人事部"},
+                { "id":21,"pid":2, "name":"导航浮标"},
 
-                { "id":23,"pid":2, "name":"法院后勤部门"}
+                { "id":23,"pid":2, "name":"检测浮标"}
             ]
         },
-        {"id":3,"pid":0,"name":"办案终结", icon:"img/page.png",
+        {"id":3,"pid":0,"name":"观测站", icon:"img/page.png",
             children: [
-                { "id":31,"pid":3, "name":"检查人事部"},
+                { "id":31,"pid":3, "name":"无人观测站"},
 
-                { "id":33,"pid":3, "name":"检查院后勤部门"}
+                { "id":33,"pid":3, "name":"有人观测站"}
             ]}
     ]}
 

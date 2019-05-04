@@ -99,21 +99,21 @@ function initMap() {
 
     //添加地面叠加层
     // 西南角和东北角
-    var SW = new BMap.Point(119.288358,32.099763);
-    var NE = new BMap.Point(122.353495,36.843467);
-
-    groundOverlayOptions = {
-        opacity: 1,
-        displayOnMinLevel: 1,
-        displayOnMaxLevel: 14
-    }
-    // 初始化GroundOverlay
-    var groundOverlay = new BMap.GroundOverlay(new BMap.Bounds(SW, NE), groundOverlayOptions);
-
-    // 设置GroundOverlay的图片地址
-    groundOverlay.setImageURL('img/temperature1.png');
-
-    map.addOverlay(groundOverlay);
+    // var SW = new BMap.Point(19.926544,-34.864315);
+    // var NE = new BMap.Point(165.099614,62.477103);
+    //
+    // groundOverlayOptions = {
+    //     opacity: 1,
+    //     displayOnMinLevel: 1,
+    //     displayOnMaxLevel: 14
+    // }
+    // // 初始化GroundOverlay
+    // var groundOverlay = new BMap.GroundOverlay(new BMap.Bounds(SW, NE), groundOverlayOptions);
+    //
+    // // 设置GroundOverlay的图片地址
+    // groundOverlay.setImageURL('img/部分抠图1.png');
+    //
+    // map.addOverlay(groundOverlay);
 
     // function addGroundOverlay() {
     //     // 添加GroundOverlay

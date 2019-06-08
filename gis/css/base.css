@@ -384,6 +384,16 @@ a:hover{
     width: 30% !important;
     left: 35% !important;
 }
+
+.pic-center{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .div_table{
     width: 98%;
     margin-left: 1%;
@@ -391,7 +401,7 @@ a:hover{
     height: 280px;
 }
 .div_table_box{
-    width: 23%;
+    width: 31.3%;
     margin-right: 2%;
 }
 .table_p{
